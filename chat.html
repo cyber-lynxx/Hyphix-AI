@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+      
+        <link rel="stylesheet", href="/static/style.css">
+        <script src="https://cdn.socket.io/4.8.3/socket.io.min.js"></script>
+        <script src="/static/chat.js"></script>
+
+        <title>Hyphix AI</title>
+    </head>
+    <body>
+      <h1 style="background-color: lightgoldenrodyellow;">Hyphix Chat🐦‍🔥 </h1>
+      
+      <div class="main">
+        <div id="responses"></div>
+        <br/>
+        <div>
+          <input id="chat_input", onkeydown="enter(event)"></input>
+          <button onclick="submit()" class="small-button">Send</button>
+        </div>
+
+      </div>
+    </body>
+</html>
