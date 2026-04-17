@@ -10,10 +10,8 @@ socketio = SocketIO()
 socketio.init_app(app)
 
 @app.route("/")
-def home():
-	return "Flask installed!"
-#def route_index():
-  #return redirect("/page/index")
+def route_index():
+  return redirect("/page/index")
 
 @app.route("/page/<name>")
 def route(name):
