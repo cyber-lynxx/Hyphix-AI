@@ -1,5 +1,3 @@
-This will become a python file
-
 from openai import OpenAI
 
 client = OpenAI()
