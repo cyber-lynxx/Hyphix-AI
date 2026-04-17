@@ -1,0 +1,83 @@
+blink {
+ animation: blinker 0.8s step-start infinite;
+}
+@keyframes blinker {
+ 50% { opacity: 0; }
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex:initial;
+  
+  height:95%;
+  width:95%;
+  background-color: #ffbe8a;
+  
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  align-self: center;
+}
+
+#responses {
+  width: 50%;
+  height: 70%;
+  background-color: #f8f8fc;
+  overflow: auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex:auto;
+  width: 95%;
+}
+
+button {
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-style: normal;
+
+  width: 7.8dvw;
+  height: 7dvh;
+
+  border-radius: 45%/60%;
+}
+
+.small-button {
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-style: normal;
+
+  width: 6dvw;
+  height: 4.5dvh;
+
+  border-radius: 45%/60%;
+}
+
+.tangerine-regular {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tangerine-bold {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: xx-large;
+}
+
+.amarante-regular {
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-style: normal;
+}
