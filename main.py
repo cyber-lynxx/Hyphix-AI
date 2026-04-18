@@ -11,9 +11,9 @@ socketio.init_app(app)
 
 @app.route("/")
 def route_index():
-  return redirect("index")
+  return redirect("index.html")
 
-@app.route("/page/<name>")
+@app.route("/<name>")
 def route(name):
   try:
     result = render_template(f"{name}.html")
