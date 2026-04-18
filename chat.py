@@ -3,7 +3,7 @@ from openai import OpenAI
 client = OpenAI()
 previous_id = None
 
-print("         🐦‍🔥Hyphix AI ")
+print("         Hyphix AI ")
 print("-------------------------------")
 print("Credit to OpenAI for developing the original AI.")
 print("Tip: Type 'exit' when you're done chatting.")
