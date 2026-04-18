@@ -11,7 +11,7 @@ socketio.init_app(app)
 
 @app.route("/")
 def route_index():
-  return redirect("index.html")
+  return redirect("index")
 
 @app.route("/<name>")
 def route(name):
