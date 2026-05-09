@@ -3,7 +3,7 @@ import os
 
 API_KEY = os.getenv("API_KEY")
 
-client = OpenAI()
+client = OpenAI(api_key = API_KEY)
 
 def send_message(user_input, previous_id):
     response = client.responses.create(
