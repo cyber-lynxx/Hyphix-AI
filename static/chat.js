@@ -1,26 +1,20 @@
-let socket_global = null
-
-function get_socket() {
-  if (socket_global){
-    return socket_global
-  } else {
-    socket_global = io()
-    return socket_global
-  }  
-}
+let socket = io()
+let current_id = null
 
 function submit() {
-  let socket = get_socket()
   let chat_input = document.getElementById("chat_input")
   let responses = document.getElementById("responses")
   let message = chat_input.value
+  if (message.length < 1) {return}
   chat_input.value = ""
-  
+  chat_input.disabled = true
+
+
   let bubble = document.createElement("p")
   bubble.className = "user_message"
   bubble.setHTML(message)
   responses.append(bubble)
-  socket.emit("message", {data: message})
+  socket.emit("chat_send", message, current_id)
 }
 
 function enter(event) {
@@ -28,10 +22,15 @@ function enter(event) {
   submit()
 }
 
-function response(text) {
+function response(text, id) {
+  current_id = id
   let bubble = document.createElement("p")
   bubble.className = "response_message"
   let responses = document.getElementById("responses")
   bubble.setHTML(text)
   responses.append(bubble)
+  let chat_input = document.getElementById("chat_input")
+  chat_input.disabled = false
 }
+
+socket.on("chat_response", response)
