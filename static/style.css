@@ -33,12 +33,34 @@ h1 {
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex:auto;
-  width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex:auto;
+    width: 95%;
+    height: 80%;
+    max-height: 80%
+}
+
+.user_message {
+    background-color: rgb(255, 186, 57);
+    border-radius: 10px;
+    align-self: flex-end;
+    max-width: 40%;
+    height: min-content;
+    padding: 1%;
+    margin: 5%;
+    
+}
+
+.response_message {
+    background-color: #fdc9bb;
+    border-radius: 10px;
+    max-width:40%;
+    height: min-content;
+    padding: 1%;
+    margin: 5%;
 }
 
 button {
