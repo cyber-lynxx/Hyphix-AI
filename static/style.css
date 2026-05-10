@@ -1,35 +1,35 @@
 blink {
- animation: blinker 0.8s step-start infinite;
+    animation: blinker 0.8s step-start infinite;
 }
 @keyframes blinker {
- 50% { opacity: 0; }
+50% { opacity: 0; }
 }
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  flex:initial;
-  
-  height:95%;
-  width:95%;
-  background-color: #ffbe8a;
-  
-  font-family: "Amarante", serif;
-  font-weight: 400;
-  font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex:initial;
+    height:95%;
+    max-height:95%;
+    width:95%;
+    max-width:95%;
+    background-color: #ffbe8a;
 }
 
 h1 {
-  align-self: center;
+    align-self: center;
 }
 
 #responses {
-  width: 50%;
-  height: 70%;
-  background-color: #f8f8fc;
-  overflow: auto;
+    width: 50%;
+    height: 70%;
+    max-height: 70%;
+    background-color: white;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .main {
@@ -67,10 +67,8 @@ button {
   font-family: "Amarante", serif;
   font-weight: 400;
   font-style: normal;
-
   width: 7.8dvw;
   height: 7dvh;
-
   border-radius: 45%/60%;
 }
 
@@ -78,10 +76,8 @@ button {
   font-family: "Amarante", serif;
   font-weight: 400;
   font-style: normal;
-
   width: 6dvw;
   height: 4.5dvh;
-
   border-radius: 45%/60%;
 }
 
